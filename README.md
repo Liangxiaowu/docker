@@ -8,27 +8,22 @@
 
 ## 2、目录接口
 ```
-├── mysql                               # mysql
+├── mysql                               # mysql目录
 │   └── ...                     
-
 ├── nginx                               #nginx目录
 │   ├── conf   
 		├── conf.d 						#其他目录
 		├── vhost						#nginx站点配置目录
 		├── Dockerfile					#nginx构建文件
 		├── nginx.conf   				#nginx配置文件
-
 ├── php                                 #php目录
 │   ├── conf
 		├── php.ini 					#php配置文件
 	├── Dockerfile 						#php构建文件
-
-
 ├── redis                               #redis目录
 │   ├── config							#redis配置文件目录
 	├── sh 								#redis脚本文件目录   
 	├── Dockerfile 						#php构建文件
-
 ├── .env								#环境变量配置文件
 ├── docker-compose.yaml 				#docker-compose配置文件
 ```
