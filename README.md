@@ -46,3 +46,5 @@
 	其他命令课参考docker-compose的文档：https://docs.docker.com/compose/
 	或者--help查看相关命令
 ```
+
+## 4、总结
