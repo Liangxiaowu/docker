@@ -1,0 +1,2 @@
+2019/12/12 08:41:50 [error] 6#6: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: hf.top, request: "GET / HTTP/1.1", upstream: "http://172.21.0.2:9500/", host: "hf.top"
+2019/12/12 08:41:50 [error] 6#6: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: hf.top, request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.21.0.2:9500/favicon.ico", host: "hf.top", referrer: "http://hf.top/"

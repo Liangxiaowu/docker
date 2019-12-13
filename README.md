@@ -31,6 +31,7 @@
 ## 3、使用
 ```
 	注意：启动服务前需要进入到当前根目录下。
+	docker-compose build				# 安装
 
 	docker-compose up -d 				# docker-compose配置里启动所有服务
 

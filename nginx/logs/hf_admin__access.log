@@ -1,0 +1,5 @@
+172.21.0.1 - - [12/Dec/2019:08:41:50 +0000] "GET / HTTP/1.1" 502 559 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36"
+172.21.0.1 - - [12/Dec/2019:08:41:50 +0000] "GET /favicon.ico HTTP/1.1" 502 559 "http://hf.top/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36"
+172.21.0.1 - - [12/Dec/2019:08:42:21 +0000] "GET /home HTTP/1.1" 200 36 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36"
+172.21.0.1 - - [12/Dec/2019:08:42:21 +0000] "GET /favicon.ico HTTP/1.1" 404 0 "http://hf.top/home" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36"
+172.21.0.1 - - [12/Dec/2019:09:33:24 +0000] "GET /home HTTP/1.1" 200 36 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36"

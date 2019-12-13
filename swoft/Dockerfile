@@ -57,7 +57,7 @@ RUN wget https://github.com/swoole/swoole-src/archive/v${SWOOLE_VERSION}.tar.gz 
 RUN  composer config -g repo.packagist composer https://packagist.laravel-china.org
 
 #设置工作目录
-WORKDIR  /var/www/swoft
+WORKDIR  /var/www
 
 
 

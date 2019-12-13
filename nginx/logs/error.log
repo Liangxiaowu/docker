@@ -1,0 +1,93 @@
+2019/12/12 06:16:01 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:16:03 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:16:05 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:16:08 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:16:09 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:16:12 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:16:16 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:16:23 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:16:36 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:17:03 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:17:54 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:18:55 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:19:56 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:20:57 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:21:57 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:22:58 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:23:59 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:24:59 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:25:49 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:25:51 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:25:53 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:25:55 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:25:57 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:26:01 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:26:05 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:26:12 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:26:26 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:26:52 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:27:44 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:28:08 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:28:11 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:28:13 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:28:15 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:28:17 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:28:20 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:28:24 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:28:31 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:28:45 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:29:08 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:29:10 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:29:12 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:29:14 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:29:17 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:29:21 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:29:24 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:29:32 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:29:45 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:30:11 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:31:03 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:32:04 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:33:05 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:37:35 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:37:38 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:37:40 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:37:42 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:37:44 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:37:46 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:37:50 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:37:58 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:38:11 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 06:38:37 [emerg] 1#1: unexpected "}" in /etc/nginx/vhost/xin.admin.top.conf:3
+2019/12/12 08:16:36 [emerg] 1#1: duplicate upstream "swoole" in /etc/nginx/vhost/xin.admin.top.conf:1
+2019/12/12 08:16:39 [emerg] 1#1: duplicate upstream "swoole" in /etc/nginx/vhost/xin.admin.top.conf:1
+2019/12/12 08:16:41 [emerg] 1#1: duplicate upstream "swoole" in /etc/nginx/vhost/xin.admin.top.conf:1
+2019/12/12 08:16:44 [emerg] 1#1: duplicate upstream "swoole" in /etc/nginx/vhost/xin.admin.top.conf:1
+2019/12/12 08:16:47 [emerg] 1#1: duplicate upstream "swoole" in /etc/nginx/vhost/xin.admin.top.conf:1
+2019/12/12 08:16:49 [emerg] 1#1: duplicate upstream "swoole" in /etc/nginx/vhost/xin.admin.top.conf:1
+2019/12/12 08:16:53 [emerg] 1#1: duplicate upstream "swoole" in /etc/nginx/vhost/xin.admin.top.conf:1
+2019/12/12 08:17:00 [emerg] 1#1: duplicate upstream "swoole" in /etc/nginx/vhost/xin.admin.top.conf:1
+2019/12/12 08:17:14 [emerg] 1#1: duplicate upstream "swoole" in /etc/nginx/vhost/xin.admin.top.conf:1
+2019/12/12 08:17:40 [emerg] 1#1: duplicate upstream "swoole" in /etc/nginx/vhost/xin.admin.top.conf:1
+2019/12/13 01:04:58 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
+2019/12/13 01:05:00 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
+2019/12/13 01:05:03 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
+2019/12/13 01:05:06 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
+2019/12/13 01:05:08 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
+2019/12/13 01:05:11 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
+2019/12/13 01:05:15 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
+2019/12/13 01:05:22 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
+2019/12/13 01:05:36 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
+2019/12/13 01:06:02 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
+2019/12/13 01:06:54 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
+2019/12/13 01:07:55 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
+2019/12/13 01:08:56 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
+2019/12/13 01:09:57 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
+2019/12/13 01:10:58 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
+2019/12/13 01:11:58 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
+2019/12/13 01:12:59 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
+2019/12/13 01:14:00 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
+2019/12/13 01:15:01 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
+2019/12/13 01:16:02 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
+2019/12/13 01:17:02 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
+2019/12/13 01:18:03 [emerg] 1#1: host not found in upstream "php72:9600" in /etc/nginx/vhost/xin.admin.top.conf:2
