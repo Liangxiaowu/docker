@@ -6,7 +6,7 @@ services:
        - "${NGINX_HTTP_HOST_PORT}:80"
        - "${NGINX_HTTPS_HOST_PORT}:443"
      depends_on:
-       - php73
+       - php
      networks:
        - app-network
      stdin_open: true
@@ -20,7 +20,7 @@ services:
        - ${NGINX_CONFIG}/nginx.conf:/etc/nginx/nginx.conf:ro
        - ${NGINX_CONFIG}/logs/:/var/log/nginx/:rw
 
-  php73:
+  php:
      build:
        context: php
        args:
@@ -28,9 +28,10 @@ services:
          SWOOLE_VERSION: ${SWOOLE_VERSION}
          PHPREDIS_VERSION: ${PHPREDIS_VERSION}
          COMPOSER_URL: ${COMPOSER_URL}
-     container_name: php73
+     container_name: php
      ports:
        - "${PHP_PORT_9000}:9000"
+       - "9100:9100"
      volumes:
        - ${CODE_PATH}:/var/www/html/:rw
      stdin_open: true
@@ -40,25 +41,6 @@ services:
      privileged: true
      restart: always
 
-  nginx1:
-    image: nginx
-    ports:
-      - "${NGINX_HTTP_HOST_PORT}:80"
-      - "${NGINX_HTTPS_HOST_PORT}:443"
-    depends_on:
-      - php73
-    networks:
-      - app-network
-    stdin_open: true
-    tty: true
-    privileged: true
-    restart: always
-    volumes:
-      - ${CODE_PATH}:/var/www/html/:rw
-      - ${NGINX_CONFIG}/conf/conf.d:/etc/nginx/conf.d:rw
-      - ${NGINX_CONFIG}/conf/vhost:/etc/nginx/vhost:rw
-      - ${NGINX_CONFIG}/nginx.conf:/etc/nginx/nginx.conf:ro
-      - ${NGINX_CONFIG}/logs/:/var/log/nginx/:rw
 networks:
   app-network:
         driver: bridge

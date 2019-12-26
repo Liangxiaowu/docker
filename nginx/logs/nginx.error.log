@@ -30,3 +30,6 @@
 2019/12/12 05:47:39 [error] 6#6: *5 open() "/var/www/html/default/www" failed (2: No such file or directory), client: 172.21.0.1, server: localhost, request: "GET /www HTTP/1.1", host: "127.0.0.1"
 2019/12/12 05:47:40 [error] 6#6: *5 open() "/var/www/html/default/www" failed (2: No such file or directory), client: 172.21.0.1, server: localhost, request: "GET /www HTTP/1.1", host: "127.0.0.1"
 2019/12/12 05:47:41 [error] 6#6: *5 open() "/var/www/html/default/www" failed (2: No such file or directory), client: 172.21.0.1, server: localhost, request: "GET /www HTTP/1.1", host: "127.0.0.1"
+2019/12/16 02:49:28 [error] 6#6: *27 open() "/var/www/html/default/admin" failed (2: No such file or directory), client: 172.21.0.1, server: localhost, request: "GET /admin HTTP/1.1", host: "t.admin.top.cn"
+2019/12/16 02:49:29 [error] 6#6: *27 open() "/var/www/html/default/favicon.ico" failed (2: No such file or directory), client: 172.21.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "t.admin.top.cn", referrer: "http://t.admin.top.cn/admin"
+2019/12/16 02:55:43 [error] 6#6: *50 open() "/var/www/html/default/favicon.ico" failed (2: No such file or directory), client: 172.21.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "192.168.2.112", referrer: "http://192.168.2.112/"
