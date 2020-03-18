@@ -81,6 +81,22 @@ RUN wget https://github.com/swoole/swoole-src/archive/v${SWOOLE_VERSION}.tar.gz 
     && rm -r swoole \
     && docker-php-ext-enable swoole
 
+## 安装mongo
+RUN wget http://pecl.php.net/get/mongodb-1.5.2.tgz -O mongodb.tgz \
+    && mkdir -p mongodb \
+    && tar -zxvf mongodb.tgz -C mongodb --strip-components=1 \
+    && rm mongodb.tgz \
+    && ( \
+        cd mongodb \
+        && phpize \
+        && ./configure  --with-php-config=/usr/local/bin/php-config \
+        && make \
+        && make install \
+    ) \
+    && rm -r mongodb \
+    && docker-php-ext-enable mongodb
+
+
 # php-inotify 扩展
 #RUN wget https://pecl.php.net/get/inotify-2.0.0.tgz -O inotify.tar.gz \
 #    && mkdir -p inotify \
@@ -104,7 +120,7 @@ RUN  composer config -g repo.packagist composer https://mirrors.aliyun.com/compo
 #ENTRYPOINT ["php","/var/www/html/draw_prize/bin/hyperf.php", "start"]
 
 #设置工作目录
-WORKDIR  /var/www/html/draw_prize
+WORKDIR  /var/www/html
 
 
 

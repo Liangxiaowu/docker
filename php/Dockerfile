@@ -1,4 +1,4 @@
-FROM php:7.2
+FROM php:7.2-fpm
 # Version
 ENV PHPREDIS_VERSION 4.0.0
 ENV SWOOLE_VERSION 4.4.8
@@ -24,7 +24,8 @@ RUN apt-get -y update \
     && apt-get clean -y \
     && apt-get autoremove -y \
     && apt-get install -y cron \
-    && touch /var/log/cron.log
+    && touch /var/log/cron.log \
+    && apt-get install -y procps
 
 # Composer
 RUN curl -sS https://getcomposer.org/installer | php \
@@ -47,6 +48,7 @@ RUN apt-get update && apt-get install -y \
 # docker方式安装PDO extension
 RUN docker-php-ext-install pdo_mysql
 RUN docker-php-ext-install pcntl
+RUN docker-php-ext-install sockets
 
 # Redis extension
 RUN wget http://pecl.php.net/get/redis-${PHPREDIS_VERSION}.tgz -O /tmp/redis.tar.tgz \
@@ -76,9 +78,9 @@ RUN  composer config -g repo.packagist composer https://mirrors.aliyun.com/compo
 
 
 #设置工作目录
-WORKDIR  /platform_admin_api
+WORKDIR  /var/www/html
 
-ENTRYPOINT ["/bin/sh","/platform_admin_api/reload.sh"]
+#ENTRYPOINT ["/bin/sh","/platform_admin_api/reload.sh"]
 
 
 

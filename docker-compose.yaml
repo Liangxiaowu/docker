@@ -11,6 +11,8 @@ services:
     container_name: hyperf
     ports:
       - "9700:9700"
+      - "9701:9701"
+      - "9702:9702"
     volumes:
       - ${CODE_PATH}:/var/www/html/:rw
     stdin_open: true
@@ -29,7 +31,7 @@ services:
         COMPOSER_URL: ${COMPOSER_URL}
     container_name: php72
     ports:
-      - "9800:9800"
+      - "9000:9000"
     volumes:
       - ${CODE_PATH}:/var/www/html/:rw
     stdin_open: true
@@ -39,14 +41,13 @@ services:
     privileged: true
     restart: always
   nginx:
-    image: nginx
+    image: nginx:latest
     ports:
       - "${NGINX_HTTP_HOST_PORT}:80"
       - "${NGINX_HTTPS_HOST_PORT}:443"
-      - "8899:8899"
     depends_on:
-      - hyperf
       - php72
+      - hyperf
     networks:
       - app-network
     stdin_open: true
@@ -59,6 +60,23 @@ services:
       - ${NGINX_CONFIG}/conf/vhost:/etc/nginx/vhost:rw
       - ${NGINX_CONFIG}/nginx.conf:/etc/nginx/nginx.conf:ro
       - ${NGINX_CONFIG}/logs/:/var/log/nginx/:rw
+  mongoDB:
+    image: mongo:latest
+    container_name: mongoDB
+    ports:
+      - "27017:27017"
+    networks:
+      - app-network
+    stdin_open: true
+    tty: true
+    privileged: true
+    restart: always
+    volumes:
+      - ${CODE_PATH}/mongoDB/db:/data/db:rw
+
 networks:
   app-network:
     driver: bridge
+
+
+## docker run --name mysql.5.7.21 -p 3333:3306  -v /Users/xiaowu/Code/mysql5.7:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7.21
