@@ -3,18 +3,13 @@ services:
   hyperf:
     build:
       context: hyperf
-      args:
-        PHP_VERSION: ${PHP_VERSION}
-        SWOOLE_VERSION: ${SWOOLE_VERSION}
-        PHPREDIS_VERSION: ${PHPREDIS_VERSION}
-        COMPOSER_URL: ${COMPOSER_URL}
     container_name: hyperf
     ports:
-      - "9700:9700"
-      - "9701:9701"
-      - "9702:9702"
+      - "9501:9501"
+      - "9502:9502"
+      - "9503:9503"
     volumes:
-      - ${CODE_PATH}:/var/www/html/:rw
+      - D:/PHP/chat_system/chat_system_service/:/var/www/html/:rw
     stdin_open: true
     networks:
       - app-network
@@ -60,23 +55,34 @@ services:
       - ${NGINX_CONFIG}/conf/vhost:/etc/nginx/vhost:rw
       - ${NGINX_CONFIG}/nginx.conf:/etc/nginx/nginx.conf:ro
       - ${NGINX_CONFIG}/logs/:/var/log/nginx/:rw
-  mongoDB:
-    image: mongo:latest
-    container_name: mongoDB
-    ports:
-      - "27017:27017"
-    networks:
-      - app-network
-    stdin_open: true
-    tty: true
-    privileged: true
-    restart: always
-    volumes:
-      - ${CODE_PATH}/mongoDB/db:/data/db:rw
-
+#  elasticsearch:
+#      image: elasticsearch:7.7.0
+#      container_name: elasticsearch
+#      restart: always
+#      environment:
+#        - node.name=235
+#        - network.publish_host=10.100.103.235
+#        - network.host=0.0.0.0
+#        - discovery.seed_hosts=10.100.103.233,10.100.103.234,10.100.103.235
+#        - cluster.initial_master_nodes=10.100.103.233,10.100.103.234,10.100.103.235
+#        - cluster.name=es-cluster
+#        - bootstrap.memory_lock=true
+#        - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+#      ports:
+#        - "9200:9200"
+#        - "9300:9300"
+#      ulimits:
+#          memlock:
+#          soft: -1
+#          hard: -1
 networks:
   app-network:
     driver: bridge
 
 
 ## docker run --name mysql.5.7.21 -p 3333:3306  -v /Users/xiaowu/Code/mysql5.7:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7.21
+
+
+
+##docker run -d --name rabbitmq3.8.3 -p 5672:5672 -p 15672:15672 -v D:/rabbitMQ/data:/var/lib/rabbitmq --hostname myRabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost  -e RABBITMQ_DEFAULT_USER=admin -e RABBITMQ_DEFAULT_PASS=admin 1c
+#  1e1f201079
