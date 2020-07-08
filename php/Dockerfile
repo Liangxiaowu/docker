@@ -1,7 +1,7 @@
 FROM php:7.2-fpm
 # Version
 ENV PHPREDIS_VERSION 4.0.0
-ENV SWOOLE_VERSION 4.4.8
+ENV SWOOLE_VERSION 4.5.2
 #COPY ./sources.list /etc/apt/sources.list
 RUN sed -i 's/deb.debian.org/mirrors.aliyun.com/g' /etc/apt/sources.list && sed -i 's/security.debian.org/mirrors.aliyun.com/g' /etc/apt/sources.list
 # Timezone
@@ -73,8 +73,13 @@ RUN wget https://github.com/swoole/swoole-src/archive/v${SWOOLE_VERSION}.tar.gz 
     && docker-php-ext-enable swoole
 
 RUN echo "swoole.use_shortname = Off" >> /usr/local/etc/php/conf.d/docker-php-ext-swoole.ini
+
+
 #切换镜像
-RUN  composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
+RUN  composer config -g repo.packagist composer https://packagist.laravel-china.org
+
+#composer 全局禁用https请求
+RUN composer config -g secure-http false
 
 
 #设置工作目录

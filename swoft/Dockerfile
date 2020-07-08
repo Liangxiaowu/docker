@@ -1,7 +1,7 @@
 FROM php:7.3
 # Version
 ENV PHPREDIS_VERSION 4.0.0
-ENV SWOOLE_VERSION 4.3.3
+ENV SWOOLE_VERSION 4.5.2
 #COPY ./sources.list /etc/apt/sources.list
 RUN sed -i 's/deb.debian.org/mirrors.aliyun.com/g' /etc/apt/sources.list && sed -i 's/security.debian.org/mirrors.aliyun.com/g' /etc/apt/sources.list
 # Timezone
