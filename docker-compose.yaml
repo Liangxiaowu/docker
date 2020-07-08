@@ -14,36 +14,6 @@ services:
     tty: true
     privileged: true
     restart: always
-  swoft:
-    build:
-      context: swoft
-    container_name: swoft
-    ports:
-      - "9501:9501"
-      - "18306:18306"
-    volumes:
-      - ${CODE_PATH}/swoftDemo:/var/www:rw
-    stdin_open: true
-    networks:
-      - app-network
-    tty: true
-    privileged: true
-    restart: always
-  swoft2:
-    build:
-      context: swoft
-    container_name: swoft2
-    ports:
-      - "9502:9502"
-      - "18307:18307"
-    volumes:
-      - ${CODE_PATH}/swoftClinetDemo:/var/www:rw
-    stdin_open: true
-    networks:
-      - app-network
-    tty: true
-    privileged: true
-    restart: always
   nginx:
     image: nginx:latest
     ports:
@@ -51,7 +21,6 @@ services:
       - "${NGINX_HTTPS_HOST_PORT}:443"
     depends_on:
       - php74
-      - swoft
     networks:
       - app-network
     stdin_open: true

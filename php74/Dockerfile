@@ -3,7 +3,7 @@ FROM php:7.4-alpine
 MAINTAINER wudner <965391514@qq.com>
 
 ENV PHPREDIS_VERSION 5.1.0
-ENV SWOOLE_VERSION 4.5.0
+ENV SWOOLE_VERSION 4.5.2
 
 COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr/bin/
 
@@ -44,6 +44,7 @@ RUN wget https://github.com/swoole/swoole-src/archive/v${SWOOLE_VERSION}.tar.gz 
     ) \
     && rm -r swoole \
     && docker-php-ext-enable swoole
+#RUN echo "swoole.use_shortname = Off" >> /usr/local/etc/php/conf.d/docker-php-ext-swoole.ini
 
 # 安装 Composer
 RUN curl -sS https://getcomposer.org/installer | php \
