@@ -83,7 +83,7 @@ RUN composer config -g secure-http false
 
 
 #设置工作目录
-WORKDIR  /var/www/html
+WORKDIR  /var/www
 
 #ENTRYPOINT ["/bin/sh","/platform_admin_api/reload.sh"]
 
