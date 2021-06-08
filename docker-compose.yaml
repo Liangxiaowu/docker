@@ -1,25 +1,11 @@
 version: "3.6"
 services:
-  php74:
+  php70:
     build:
-      context: php74
-    container_name: php74
+      context: php70
+    container_name: php70
     ports:
       - "9000:9000"
-    volumes:
-      - ${CODE_PATH}:/var/www:rw
-    stdin_open: true
-    networks:
-      - app-network
-    tty: true
-    privileged: true
-    restart: always
-  php72:
-    build:
-      context: php
-    container_name: php72
-    ports:
-      - "9501:9501"
     volumes:
       - ${CODE_PATH}:/var/www:rw
     stdin_open: true
@@ -33,10 +19,10 @@ services:
     ports:
       - "${NGINX_HTTP_HOST_PORT}:80"
       - "${NGINX_HTTPS_HOST_PORT}:443"
-    depends_on:
-      - php74
     networks:
       - app-network
+    depends_on:
+      - php70
     stdin_open: true
     tty: true
     privileged: true
@@ -47,34 +33,6 @@ services:
       - ${NGINX_CONFIG}/conf/vhost:/etc/nginx/vhost:rw
       - ${NGINX_CONFIG}/nginx.conf:/etc/nginx/nginx.conf:ro
       - ${NGINX_CONFIG}/logs/:/var/log/nginx/:rw
-#  elasticsearch:
-#      image: elasticsearch:7.7.0
-#      container_name: elasticsearch
-#      restart: always
-#      environment:
-#        - node.name=235
-#        - network.publish_host=10.100.103.235
-#        - network.host=0.0.0.0
-#        - discovery.seed_hosts=10.100.103.233,10.100.103.234,10.100.103.235
-#        - cluster.initial_master_nodes=10.100.103.233,10.100.103.234,10.100.103.235
-#        - cluster.name=es-cluster
-#        - bootstrap.memory_lock=true
-#        - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-#      ports:
-#        - "9200:9200"
-#        - "9300:9300"
-#      ulimits:
-#          memlock:
-#          soft: -1
-#          hard: -1
 networks:
   app-network:
     driver: bridge
-
-
-## docker run --name mysql.5.7.21 -p 3333:3306  -v /Users/xiaowu/Code/mysql5.7:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7.21
-
-
-
-##docker run -d --name rabbitmq3.8.3 -p 5672:5672 -p 15672:15672 -v D:/rabbitMQ/data:/var/lib/rabbitmq --hostname myRabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost  -e RABBITMQ_DEFAULT_USER=admin -e RABBITMQ_DEFAULT_PASS=admin 1c
-#  1e1f201079

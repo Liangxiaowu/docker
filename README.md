@@ -49,3 +49,7 @@
 ```
 
 ## 4、总结
+
+docker run --name zk1 -v /home/xiaowu/PHP/github/docker/zk/zk1/conf:/apache-zookeeper-3.7.0-bin/conf -v /home/xiaowu/PHP/github/docker/zk/zk1/data:/apache-zookeeper-3.7.0-bin/data  -d zookeeper
+docker run --name zk2 -v /home/xiaowu/PHP/github/docker/zk/zk2/conf:/apache-zookeeper-3.7.0-bin/conf -v /home/xiaowu/PHP/github/docker/zk/zk2/data:/apache-zookeeper-3.7.0-bin/data  -d zookeeper
+docker run --name zk3 -v /home/xiaowu/PHP/github/docker/zk/zk3/conf:/apache-zookeeper-3.7.0-bin/conf -v /home/xiaowu/PHP/github/docker/zk/zk3/data:/apache-zookeeper-3.7.0-bin/data  -d zookeeper
