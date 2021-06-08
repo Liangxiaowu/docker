@@ -1,0 +1,35 @@
+version: "3.6"
+services:
+  zk1:
+    image: zookeeper
+    restart: always
+    container_name: zk1
+    networks:
+      - zk-network
+    ports:
+      - "2181:2181"
+
+  zk2:
+    image: zookeeper
+    restart: always
+    container_name: zk2
+    networks:
+      - zk-network
+    ports:
+      - "2182:2181"
+    volumes:
+
+
+  zk3:
+    image: zookeeper
+    restart: always
+    container_name: zk3
+    networks:
+      - zk-network
+    ports:
+      - "2183:2181"
+
+
+networks:
+  zk-network:
+    driver: bridge
